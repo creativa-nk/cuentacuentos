@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body {
+    width: 100vw;
+    min-height: 1500px;
+}
+
+/* ---------NavBar---------- */
+.navbar{
+    background:#4690e4 ;
+    width: 100vw;
+    height: 4rem;
+}
+
+/*--------- Inicio----------*/
+section{
+    background:#5799E3 ; 
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container_parallax{
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    /* background: magenta; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43,transparent);
+    z-index: 100;
+}
+.container_parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    z-index: 1;
+}
+
+  /*-------- NUBE ----------*/
+.nube{
+    background: #0a2a43;
+    height: 1500px;
+    width: 100vw;
+    z-index: 100;
+}
