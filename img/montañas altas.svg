@@ -1,47 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cuentacuentos</title>
-</head>
-<body>
-<!-- Navbar -->
-<div class="navbar"></div>
-<!--  -->
-
-<!-- Inicio -->
-<section>
-    <div>
-        <h2 id="text2">Descubre la magia</h2>
-        <h2 id="text2">de los libros</h2>
-    </div>
-    
-    <div class="container_parallax">
-        <img src="./img/sol.png" alt="" id="sol">
-        <img src="./img/montañas altas.png" alt="" id="montaña">
-        <h2 id="text">Descubre la magia</h2>
-        <img src="./img/montañas bajas.png" alt="" id="montaña2">
-        <img src="./img/bosque.png" alt="" id="bosque">
-        <img src="./img/castillo.png" alt="" id="castillo">
-        
-    </div>
-</section>   
-
-<!--  -->
-
-<!-- La nube -->
-
-<svg class="mont-svg" version="1.0" xmlns="http://www.w3.org/2000/svg"
-width="100vw" height="auto" viewBox="0 0 3000.000000 1837.000000"
-preserveAspectRatio="xMidYMid meet">
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="3000.000000pt" height="1837.000000pt" viewBox="0 0 3000.000000 1837.000000"
+ preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
 <g transform="translate(0.000000,1837.000000) scale(0.100000,-0.100000)"
-fill="#ffff" stroke="none">
+fill="#000000" stroke="none">
 <path d="M3531 12882 c-57 -28 -57 -29 -123 -167 -45 -94 -102 -173 -207 -280
 -48 -49 -109 -115 -134 -145 -26 -30 -53 -62 -60 -71 -8 -9 -44 -61 -80 -115
 -45 -69 -101 -133 -181 -211 -63 -62 -126 -129 -139 -150 -13 -21 -32 -45 -41
@@ -554,43 +521,3 @@ c-2 -16 -1 -28 4 -28 4 0 9 10 11 22 3 20 4 21 20 5 9 -9 22 -17 28 -17 6 0 8
 34 -85 34 -10 0 -42 -13 -72 -28z"/>
 </g>
 </svg>
-<div class="nube">
- 
-    <div class="grid">
-        <div class="container_cartel_cuentacuentos">
-            <h1>Cuentacuentos</h1>
-            <!-- <img src="./img/cartel cuentacuentos.png" alt=""> -->
-        </div>
-        <div class="agujero">
-            <div class="detalles">
-                <span class="dia">Sabado</span>
-                <span class="fecha">20 de noviembre</span>
-                <span class="titulo-libro">En este cuento no hay ningun Lobo Feroz</span>
-            </div>
-        </div>
-        <div class="container-libro">
-            <div class="libro">
-                <div class="card front">
-                    <img src="./img/libro de frente!.png" alt="">
-                </div>
-                <div class="card back">
-                    <img src="./img/libro de atras!.png" alt="">
-                </div>
-            </div>
-            <div class="sombra"></div>
-        </div>
-        <div class="btn">
-            <p>Reserva tu plaza</p>
-        </div>
-    </div>
-   
-</div>
-<!--  -->
-
-<!-- El bosque -->
-<!--  -->
-
-
-<script src="main.js"></script>   
-</body>
-</html>

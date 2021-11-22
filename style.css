@@ -8,14 +8,15 @@ body {
     min-height: 1500px;
 }
 
-/* ---------NavBar---------- */
+
+/* ==========NAVBAR================== */
 .navbar{
     background:#4690e4 ;
     width: 100vw;
     height: 4rem;
 }
 
-/*--------- Inicio----------*/
+/*=========INICIO=====================*/
 section{
     background:#5799E3 ; 
     position: relative;
@@ -64,21 +65,66 @@ section::before{
 }
 
 
-  /*-------- NUBE ----------*/
+/*===============NUBE=========================*/
+.mont-svg{
+   position: relative;
+   top: -500px;
+}
 .nube{
-    background: #ffffff;
-    height: 1500px;
+    margin-top: 2rem;
+    background: linear-gradient(180deg, #FFFFFF 45.31%, #6DD9FB 78.12%);
+    height: auto;
     width: 100vw;
     z-index: 100;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1rem 1fr 1fr 1fr 1rem;
+    grid-template-rows: 2rem 4rem 2rem 5fr 1fr 2rem;
+}
+.container_cartel_cuentacuentos{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin:auto ;
+}
+.container_cartel_cuentacuentos img{
+    width: 100%;
 }
 
-/* ---libro-- */
+.agujero{
+    grid-column: 2/3;
+    grid-row: 4/6;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-image: url('./img/agujero-papel2-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+.detalles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    position: absolute;
+    margin: auto;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+.detalles span{
+
+}
+
+/* -------------------libro----------------- */
 .container-libro{
     /* background: green; */
+    grid-column: 4/5;
+    grid-row: 4/6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,8 +133,7 @@ section::before{
 }
 .libro{
     position: relative;
-    width: 300px;
-    height: 400px;
+    height: 500px;
     animation: float 2.5s infinite alternate;
 }
 .card{
@@ -149,4 +194,22 @@ section::before{
     100%{
         transform: scale(1); 
     }
+}
+/* -------------------------------- */
+
+.btn{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-color:#FA513A ;
+    text-align: center;
+    margin: auto;
+    padding: 1rem 2rem;
+    color:white;
+    letter-spacing: 2px;
+    border-radius:10px;
+    font-family: ;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
 }
