@@ -38,7 +38,7 @@ section{
     justify-content: center;
     align-items: center;
 }
-section::before{
+/* section::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -46,7 +46,7 @@ section::before{
     height: 50px;
     background: linear-gradient(to top, #fdfdfd,transparent);
     z-index: 100;
-}
+} */
 .container_parallax img{
     position: absolute;
     top: 0;
@@ -66,9 +66,9 @@ section::before{
 
 
 /*===============NUBE=========================*/
-.mont-svg{
-   position: relative;
-   top: -500px;
+.svg{
+   filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
+   -webkit-filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
 }
 .nube{
     margin-top: 2rem;
@@ -213,3 +213,5 @@ section::before{
     -ms-border-radius:10px;
     -o-border-radius:10px;
 }
+
+/* ==============BOSQUE======================= */
