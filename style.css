@@ -31,6 +31,7 @@ section{
     position: relative;
     width: 80vw;
     height: 100vh;
+    overflow: hidden;
     /* background: magenta; */
     display: flex;
     justify-content: center;
@@ -41,8 +42,8 @@ section::before{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #0a2a43,transparent);
+    height: 50px;
+    background: linear-gradient(to top, #fdfdfd,transparent);
     z-index: 100;
 }
 .container_parallax img{
@@ -57,15 +58,95 @@ section::before{
 
 #text{
     position: relative;
+    top: 100px;
     color: rgb(255, 255, 255);
-    font-size: 2rem;
-    z-index: 1;
+    font-size: 10rem;  
 }
+
 
   /*-------- NUBE ----------*/
 .nube{
-    background: #0a2a43;
+    background: #ffffff;
     height: 1500px;
     width: 100vw;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---libro-- */
+.container-libro{
+    /* background: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 600px;
+}
+.libro{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    animation: float 2.5s infinite alternate;
+}
+.card{
+    position: absolute;   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform:rotateY(0deg);     /* <<<<< ----animacion----- */
+    transform-style: preserve-3d;
+    transition: 0.5s cubic-bezier(0.4, 0.2, 0.2, 1) ;
+    backface-visibility: hidden;  /* para ocultar la cara opuesta */ 
+}
+.front{
+    width:100% ; 
+    height: 100%; 
+    transform:rotateY(0deg); 
+}
+.back{
+   width:100%; 
+   height: 100%; 
+   transform:rotateY(180deg);  /*180 grados, osea esta dado la vuelta */
+}
+
+.libro:hover > .front{ /* cuando el raton se pone encima susede > que la cara frontal se da la vuelta */
+    transform:rotateY(-180deg);
+}
+ 
+.libro:hover > .back{ /* cuando el raton se pone encima susede > que la cara back se da la vuelta */
+    transform:rotateY(0deg);
+}
+
+.sombra {
+    width:100%;
+    height: 5%;
+    background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114));
+    z-index: 1;
+    filter: blur(0.5rem);
+    border-radius: 50%;
+    animation: reflection 2.5s infinite alternate;
+}
+
+ /* --------animaciones----------- */
+@keyframes float {
+    0% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes reflection {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1); 
+    }
 }
