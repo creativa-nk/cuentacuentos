@@ -114,8 +114,8 @@ body {
     -webkit-animation: swingdown 1s ease;
 }
 #menu .btn-registrate{
-    background: rgba(0,58,167,.6);
-    font-size: 10px;
+    background: rgba(0,58,167,.9);
+    font-size: 12px;
 }
 /* ----------Animacion Navbar----------- */
 @keyframes swingdown{
@@ -166,6 +166,7 @@ body {
 }
 .btn-inicio{
     background: rgba(0,58,167,.6);
+    width: 300px;
 }  
 
 .item{
@@ -178,7 +179,6 @@ body {
     height: 140vh;
     overflow-y: auto;
     overflow-x: hidden;
-    /* background: magenta; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,6 +297,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .anuncio{
@@ -504,11 +505,12 @@ body {
 .titulo-proximamente{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 
 .flechas{
-    margin: auto;
+    margin: 0 auto;
 }
 .carrusel{
     /* background: red; */
@@ -545,9 +547,8 @@ body {
 
   .grid{
     /* background: hotpink; */
-    height: 1000px;
     grid-template-columns: 1rem 1fr 1rem;
-    grid-template-rows: 1rem 2rem 4rem 2fr 1fr 1rem; 
+    grid-template-rows: 4rem 4rem 1rem 1fr 1fr; 
   }  
   .titulo_cuentacuentos{
     grid-column: 2/3; 
@@ -566,23 +567,28 @@ body {
     height: 350px;
     object-fit: fill;
    }
-  
+   #menu{
+    width: 80%;
+    margin: auto;
+   } 
    .anuncio{
     grid-column: 2/3;
     grid-row: 4/5;
    }
    .titulo_inicio{
     /* background: chocolate; */
-    height: 80%;
     width: 100%;
-    top: 12%;
-    right: 0%;
-    margin-right: 0px;
-    padding: 20px;
+    top: 16%;
+    padding: 22px;
+    margin: 0 auto;
+    
     }
     .carrusel{
-        /* background: red; */
-        justify-content: flex-start;
+     /* background: red; */
+     justify-content: flex-start;
+    }
+    .flecha{
+        width: 100%;
     }
 }
 
@@ -592,13 +598,6 @@ body {
         font-size: 30px;
         letter-spacing: 1px;
     }
-    .flecha{
-        width: 100%;
-    }
-    #menu{
-        width: 80%;
-        margin: auto;
-    } 
     .libro img{
         width: 250px;
         height: 300px;
@@ -607,5 +606,6 @@ body {
     .anuncio{
         padding: 20px;
     }
+  
 
 }
