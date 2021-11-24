@@ -36,8 +36,7 @@
             </ul>
         </li>
         <li>
-            <div class="btn registrate">Crear cuenta</div>
-            <!-- <a class="registrate" href="">Registrate</a> -->
+            <div class="btn btn-registrate">Crear cuenta</div>
         </li>
     </ul>
 </div>
@@ -46,9 +45,9 @@
 <!-- Inicio -->
 <section id="inicio">
     <div class="titulo_inicio">
-        <h1>Club de lectura</h1>
-        <p>Para viajar lejos no hay mejor nave que un libro</p>
-        <div class="btn btn-inicio">Crea tu lectura</div>
+        <h1 class="item">Club de lectura infantil</h1>
+        <p class="item">Para viajar lejos no hay mejor nave que un libro</p>
+        <div class="btn btn-inicio item">Crea tu cuenta</div>
     </div>
     
 
@@ -83,49 +82,43 @@
 <!-- La nube -->
 
 
-<section id="nube">
+<section id="mar">
+    <div class="grid">
 
-  <!--   <div class="container-nube">
-        <img class="vector-nube" src="./img/nubes top2.png" alt="">
-    </div> -->
+        <div class="titulo titulo_cuentacuentos">
+            <h1>Cuentacuentos</h1>
+        </div>
 
-    <div class="nube">
-        <!-- <div class="nube" > -->
-            <div class="grid">
-                <div class="titulo_cuentacuentos">
-                    <h1>Cuentacuentos</h1>
+        <div class="anuncio">
+            <div class="detalles">
+                <span class="dia">Sabado</span>
+                <span class="fecha">20 de noviembre</span>
+                <span class="titulo-libro">"En este cuento no hay ningun Lobo Feroz"</span>
+            </div>
+    
+            <div class="reserva">
+                <p>No te quedes sin plaza </p>
+                <div class="btn btn-reserva">
+                    <p>Reservar aquí</p>
                 </div>
-                <!-- <div class="agujero"> -->
-                    <div class="detalles">
-                        <span class="dia">Sabado</span>
-                        <span class="fecha">20 de noviembre</span>
-                        <span class="titulo-libro">En este cuento no hay ningun Lobo Feroz</span>
-                        
-                    </div>
-                   
-                <!-- </div> -->
-                <div class="container-libro">
-                    <div class="libro">
-                        <div class="card front">
-                            <img src="./img/libro de frente!.png" alt="">
-                        </div>
-                        <div class="card back">
-                            <img src="./img/libro de atras!.png" alt="">
-                        </div>
-                    </div>
-                    <div class="sombra"></div>
+            </div>
+        </div>
+
+        
+
+            
+        <div class="container-libro">
+            <div class="libro">
+                <div class="card front">
+                    <img src="./img/libro de frente!.png" alt="">
                 </div>
-                <div class="reserva">
-                    <p>No te quedes sin plaza reservala ya aquí</p>
-                    <div class="btn">
-                        <p>Reserva tu plaza</p>
-                    </div>
+                <div class="card back">
+                    <img src="./img/libro de atras!.png" alt="">
                 </div>
-                
-               
-       <!--  </div> -->
-       
-       
+            </div>
+            <div class="sombra"></div>
+        </div> 
+
     </div>
 </section>
 
@@ -141,14 +134,17 @@
   
     
     <div class="container-proximamente">
-        <div class="titulo">
-            <svg width="302" height="24" viewBox="0 0 302 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.93934 10.9394C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51473C13.1924 2.92894 13.1924 1.97919 12.6066 1.39341C12.0208 0.807622 11.0711 0.807622 10.4853 1.39341L0.93934 10.9394ZM302 10.5L2 10.5L2 13.5L302 13.5L302 10.5Z" fill="white"/>
-                </svg>
-            <h1>Proximos eventos</h1>
-            <svg width="302" height="24" viewBox="0 0 302 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M301.061 13.0607C301.646 12.4749 301.646 11.5251 301.061 10.9393L291.515 1.3934C290.929 0.807612 289.979 0.807612 289.393 1.3934C288.808 1.97918 288.808 2.92893 289.393 3.51472L297.879 12L289.393 20.4853C288.808 21.0711 288.808 22.0208 289.393 22.6066C289.979 23.1924 290.929 23.1924 291.515 22.6066L301.061 13.0607ZM0 13.5H300V10.5H0V13.5Z" fill="white"/>
-                </svg>
+        <div class="titulo-proximamente">
+            <h1 class='titulo'>Proximos eventos</h1>
+            <div class="flechas">
+                <svg class="flecha" width="302" height="24" viewBox="0 0 302 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.93934 10.9394C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51473C13.1924 2.92894 13.1924 1.97919 12.6066 1.39341C12.0208 0.807622 11.0711 0.807622 10.4853 1.39341L0.93934 10.9394ZM302 10.5L2 10.5L2 13.5L302 13.5L302 10.5Z" fill="white"/>
+                    </svg>
+                
+                <svg class="flecha" width="302" height="24" viewBox="0 0 302 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M301.061 13.0607C301.646 12.4749 301.646 11.5251 301.061 10.9393L291.515 1.3934C290.929 0.807612 289.979 0.807612 289.393 1.3934C288.808 1.97918 288.808 2.92893 289.393 3.51472L297.879 12L289.393 20.4853C288.808 21.0711 288.808 22.0208 289.393 22.6066C289.979 23.1924 290.929 23.1924 291.515 22.6066L301.061 13.0607ZM0 13.5H300V10.5H0V13.5Z" fill="white"/>
+                    </svg>
+            </div>  
         </div>
        
         <div class="carrusel">
