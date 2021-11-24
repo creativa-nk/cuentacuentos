@@ -165,22 +165,12 @@ body {
     margin-right: 100px;
 }
 .btn-inicio{
-    /* border:2px solid rgba(0,58,167,.7);
-    background:rgba(0,58,167,.3) ;
-    font-size: 10px;
-    width: 200px; */
-    
     background: rgba(0,58,167,.6);
-    box-shadow: 0 8px 32px 0 rgba(22,22,23,0.37);
-    backdrop-filter: blur(4px);
-    border:1px solid rgba(0,58,167,0.07);
-}
+}  
 
 .item{
     padding: 1rem;
 }
-
-
 
 .container_parallax{
     position: relative;
@@ -221,14 +211,6 @@ body {
     -webkit-animation: float 2.5s 0.15s infinite alternate;
 }
 
-
-
-#text{
-    position: relative;
-    top: 100px;
-    color: rgb(255, 255, 255);
-    font-size: 10rem;  
-}
 /* 0000000000000  WAVES  000000000000000000000000000000000000000 */
 
 @keyframes move_wave {
@@ -371,19 +353,19 @@ body {
 
 /* -------------------libro----------------- */
 .container-libro{
-    grid-column: 4/5;
+    /* background: chocolate; */
+    grid-column: 3/5;
     grid-row: 4/6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-    height: 500px;
+    height: 550px;
     margin: auto;
 }
 .libro{
     position: relative;
-    margin-top: 40px;
-    height: 350px;
+    height: 100%;
     animation: float 2.5s infinite alternate;
 }
 .libro img{
@@ -426,22 +408,31 @@ body {
 .sombra {
     width:100%;
     height: 5%;
-    /* background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114)); */
-    background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgba(10, 10, 10, 0.658));
+    /*background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgb(114, 114, 114));
+    */background: linear-gradient(to bottom, rgba(54, 54, 54, 0.3),rgba(10, 10, 10, 0.658));
     z-index: 1;
     filter: blur(0.5rem);
     border-radius: 50%;
     animation: reflection 2.5s infinite alternate;
+    -webkit-filter: blur(0.5rem);
 }
 
  /* --------animaciones----------- */
 @keyframes float {
     0% {
-        transform: translateY(5px);
-    }
+        transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+}
     100% {
         transform: translateY(30px);
-    }
+        -webkit-transform: translateY(30px);
+        -moz-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+        -o-transform: translateY(30px);
+}
 }
 
 @keyframes reflection {
@@ -468,14 +459,18 @@ body {
     -moz-border-radius:50px;
     -ms-border-radius:50px;
     -o-border-radius:50px;
+    box-shadow: 0 8px 32px 0 rgba(22,22,23,0.37);
+    backdrop-filter: blur(4px);
+    border:1px solid rgba(0,58,167,0.07);
 }
 .btn-reserva{
     width: 200px;
-    background:#FA513A ;  
+    background:#FA513A ; 
 }
 .reserva{
     grid-column: 2/3;
     grid-row: 5/6;
+    padding: 0 0 4rem;
 }
 
 
@@ -566,6 +561,11 @@ body {
     grid-column: 2/3;
     grid-row: 5/6;
    }
+   .libro img{
+    width: 300px;
+    height: 350px;
+    object-fit: fill;
+   }
   
    .anuncio{
     grid-column: 2/3;
@@ -587,13 +587,10 @@ body {
 }
 
 @media only screen and  (max-width:425px){
-    .libro img{
-        width: 300px;
-        height: 350px;
-        object-fit: fill;
-    }
+
     .titulo{
         font-size: 30px;
+        letter-spacing: 1px;
     }
     .flecha{
         width: 100%;
@@ -602,5 +599,13 @@ body {
         width: 80%;
         margin: auto;
     } 
+    .libro img{
+        width: 250px;
+        height: 300px;
+        object-fit: fill;
+    }
+    .anuncio{
+        padding: 20px;
+    }
 
 }
