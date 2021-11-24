@@ -25,7 +25,7 @@ body {
     /* background-color:#FA513A ; */
     text-align: center;
     margin: auto;
-    padding: 10px 15px;
+    padding: 5px 15px;
     color:white;
     letter-spacing: 2px;
     border-radius: 50px;
@@ -37,7 +37,20 @@ body {
     backdrop-filter: blur(4px);
     border:1px solid rgba(0,58,167,0.07);
     cursor: pointer;
+    transition: 0.05s;
+    -webkit-transition: 0.05s;
+    -moz-transition: 0.05s;
+    -ms-transition: 0.05s;
+    -o-transition: 0.05s;
 }
+.btn:hover{
+    filter: saturate(1.3);
+    -webkit-filter: saturate(1.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+ .btn:active{
+     background: #1da88a; /* -----cuando pulsas---- */
+ }
 
 
 /* ==========NAVBAR================== */
@@ -133,13 +146,13 @@ body {
     -webkit-animation: swingdown 1s ease;
 }
 #menu .btn-registrate{
-    background: rgba(0,58,167,.9);
+    background: rgba(6, 76, 206, 0.9);
     font-size: 12px;
 }
 #menu .btn-entrar{
     background:#068b85;
     font-size: 12px;
-}
+}   
 
 /* ----------Animacion Navbar----------- */
 @keyframes swingdown{
@@ -166,7 +179,75 @@ body {
         -ms-transform:rotateX(5deg) rotateY(-2deg)   ;
         -o-transform:rotateX(5deg) rotateY(-2deg)   ;
         animation-timing-function: ease-in-out;
+    }
 }
+
+/* ---FORM--------------- */
+.container-form{
+    width: 360px;
+    margin-left: 2.5rem;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    position: absolute;
+    z-index: 100;
+    top: 10%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-family: 'poppins';
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 8px 32px 0 rgba(22,22,23,0.37);
+    backdrop-filter: blur(4px);
+    border:1px solid rgba(255,255,255,0.18);
+}
+.fields{
+    width: 100%;
+    padding: 0px 5px 5px 5px;
+}
+
+.fields input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size:18px ;
+    color: #555;
+    padding: 20px 10px 20px 5px ;
+    
+}
+
+.username,.password{
+    margin-bottom: 30px;
+    border-radius: 25px;
+    box-shadow: inset 3px 3px 2px #cbced1,  /* !!!!!!!!  inset  MUY IMPORTANTE */
+                inset -3px -3px 2px #ffffff;
+}
+
+.fields svg{
+    height: 22px;
+    margin: 0 10px -3px 25px;
+}
+.btn-login{
+    outline: none;
+    border: none ;
+    width: 100%;
+    background: #068b85;
+   /*  box-shadow: 3px 3px 8px #b1b1b1,-3px -3px 8px #ffffff ; */
+}
+.container-form .btn-inicio{
+    width: 100%;
+}
+
+.link{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+.link a{
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    font-size: 17px;
 }
 
 
@@ -721,7 +802,6 @@ span {
     width: 300px;
     height: 400px;
     margin-left: 40px;
-    cursor: pointer;
 }
 .carrusel:last-child{
     margin-right: 40px;
@@ -730,6 +810,12 @@ span {
     width: 300px;
     height: 300px;
     object-fit: fill;
+    border-radius: 3px;
+    box-shadow: 0 8px 32px 0 rgba(22,22,23,0.57);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
 }
 
 
