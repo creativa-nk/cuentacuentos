@@ -292,24 +292,66 @@ span {
       opacity: 0.8;
     }
   }
-  
-
-
 
 .btn-inicio{
     background: rgba(0,58,167,.6);
     width: 300px;
 }  
 
-
-
-
-
 .item{
     padding: 1rem;
 }
+/* --------------------BIRD------------------------- */
+.bird1{
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 30%;
+}
+.bird2{
+    position: absolute;
+    z-index: 2;
+    top: 60%;
+    left: 65%;   
+}
+.bird3{
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    left: 55%;   
+}
+#wings3 {
+    animation: .7s .5s flying linear infinite alternate;
+    -webkit-animation: .7s .5s flying linear infinite alternate;
+}
+#wings2 {
+    animation: 1s .5s flying linear infinite alternate;
+    -webkit-animation: 1s .5s flying linear infinite alternate;
+}
 
-.container_parallax{
+#wings {
+    animation: .8s flying linear infinite alternate;
+    -webkit-animation: .8s flying linear infinite alternate;
+}
+  
+  @keyframes flying {
+    0% {
+      d: path("M 5 5 Q 25 0 50 15 L 50 25 Q 25 5 5 5 M 95 5 Q 75 0 50 15 L 50 25 Q 75 5 95 5");
+    }
+    
+    50% {
+      d: path("M 5 10 Q 25 5 50 15 L 50 25 Q 25 10 5 10 M 95 10 Q 75 5 50 15 L 50 25 Q 75 10 95 10");
+    }
+   
+    100% {
+      d: path("M 7 30 Q 25 25 50 15 L 50 25 Q 25 30 7 30 M 93 30 Q 75 25 50 15 L 50 25 Q 75 30 93 30");
+    }
+  }
+
+
+
+
+.container_img{
     position: relative;
     width: 100vw;
     height: 140vh;
@@ -324,7 +366,7 @@ span {
     display: none;
 }
 
-.parallax-img{
+.images{
     position: absolute;
     bottom: 0;
     left: 0;
