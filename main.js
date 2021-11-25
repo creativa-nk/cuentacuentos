@@ -15,20 +15,8 @@ glowInTexts.forEach(glowInText => {
 /* =================MENU=============== */
 const btn = document.querySelector('.container_menu')
 const background = document.querySelector('.background')
-const menu = document.querySelector('.menu');
-const contact = document.querySelector('.container_contact')
-
 
 
 btn.addEventListener('click',() =>{
 background.classList.toggle('active');
-menu.classList.toggle('active');
-contact.classList.toggle('active');
 })
-
-
-function closeNav(){
-  background.classList.remove('active');
-  menu.classList.remove('active');
-  contact.classList.remove('active');
-}
