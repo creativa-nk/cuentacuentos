@@ -13,30 +13,22 @@ glowInTexts.forEach(glowInText => {
 });
 
 /* =================MENU=============== */
-const toggle = document.querySelector('.toggle');
-const menu = document.querySelector('#menu');
+const btn = document.querySelector('.container_menu')
+const background = document.querySelector('.background')
+const menu = document.querySelector('.menu');
+const contact = document.querySelector('.container_contact')
 
-function toggleMenu(){
-   if(menu.classList.contains('active')){  /* si el menu contiene una clase activada(osea algo activado) */
-    closeNav() // ejecutar la funcion closeNav(),  mirar mas abajo
-} else{
-    menu.classList.add('active');/* no esta activado, pues activalo */
-    }
-}
 
-toggle.addEventListener('click', toggleMenu, false);
+
+btn.addEventListener('click',() =>{
+background.classList.toggle('active');
+menu.classList.toggle('active');
+contact.classList.toggle('active');
+})
 
 
 function closeNav(){
-    menu.classList.remove('active'); /* entonces que quite este algo activado(lo cierra) */
+  background.classList.remove('active');
+  menu.classList.remove('active');
+  contact.classList.remove('active');
 }
-
-
-
-/*-------Form------------ */
-const form = document.querySelector('.container-form');
-const btn = document.querySelector('.btn-inicio');
-
-btn.addEventListener('click',() =>{
-  form.style.opacity = 1;
-  })
