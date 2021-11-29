@@ -302,8 +302,8 @@ span {
     height: 100%;
     object-fit: cover;
     pointer-events: none;
-    filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
-    -webkit-filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
+    /* filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
+    -webkit-filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3)); */ /*  problema!!!!! va más lento */
 }
 .ballena{
     animation: float 2.5s infinite alternate;
@@ -779,8 +779,8 @@ span {
     margin-right: 40px;
 }
 .proximamente img{
-    width: 300px;
-    height: 300px;
+    width: 220px;
+    height: 250px;
     object-fit: fill;
     border-radius: 3px;
     box-shadow: 0 8px 32px 0 rgba(22,22,23,0.57);
@@ -847,7 +847,9 @@ span {
     .container_bird{
         overflow-x: hidden;
     }
-  
+    .container-fondo{
+        height: 100px;
+    }
 }
 
 
@@ -878,4 +880,5 @@ span {
     #menu{
         justify-content: space-around;
     }
+  
 } 
