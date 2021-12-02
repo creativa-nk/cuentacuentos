@@ -345,7 +345,7 @@ span {
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -20px;
     top: 0;
     margin: auto;
 }
@@ -1015,5 +1015,4 @@ span {
         top: 6%;
         padding: 0 15px;  
     }
-  
 } 
