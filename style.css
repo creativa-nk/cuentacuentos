@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
     letter-spacing: 1.5px;
     font-size: 30px;
-  
+    background:rgba(78,133,199,1) ;
 }
 .btn{
     font-family: 'Poppins', sans-serif;
@@ -162,6 +162,15 @@ body {
     align-items: center;
     background: linear-gradient(0deg, rgba(78,133,199,1) 29%, rgba(247,166,134,1) 48%, rgba(235,162,94,1) 59%, rgba(87,153,227,1) 86%);
 }
+/* .container_img::before{
+    content: '';
+    background: linear-gradient(to bottom, red, transparent);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+} */
 .titulo_inicio{
     /* background: chocolate; */
     position: absolute;
@@ -407,6 +416,44 @@ span {
     overflow-x: hidden;
 }
 
+.sobre_nosotros{
+    /* background: mediumaquamarine; */
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre_nosotros .container{
+   /*  background: chocolate; */
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.sobre_nosotros img{
+    width: 50%;
+    object-fit: fill;
+}
+.sobre_nosotros .card{
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container:hover > .front{ 
+    transform:rotateY(-180deg);
+}
+ 
+.container:hover > .back{
+   transform:rotateY(0deg);
+}
+
+
+
 .anuncio{
     /* background: chartreuse; */
     width: auto;
@@ -433,6 +480,7 @@ span {
 
 .grid{
     /* background: rgb(35, 150, 20); */
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1rem;
     grid-template-rows: 2rem 1fr 5rem 3fr 2fr 2rem;
@@ -577,6 +625,7 @@ span {
 /* ------------------------------------------------------------Burbujas----------------------------------------- */
 
 .circles{
+    /* background: yellow; */
      position: absolute;
      z-index: -1;
      top: 0;
@@ -719,13 +768,17 @@ span {
        opacity: 1;
       
     }
-    80%{
+    85%{
         opacity: 1; 
     }
     100%{
-        transform: translateY(-1500px);
+        transform: translateY(-1900px);
         opacity: 0;
-    }
+        -webkit-transform: translateY(-1900px);
+        -moz-transform: translateY(-1900px);
+        -ms-transform: translateY(-1900px);
+        -o-transform: translateY(-1900px);
+}
  
  }
 
@@ -798,6 +851,21 @@ span {
 
 /* =========================================== MediaQuery ================================ */
 @media only screen and  (max-width:768px){
+
+   .sobre_nosotros .container{
+        width: 200px;
+        height: 200px;
+    }
+    .sobre_nosotros{
+        flex-direction: column;
+    }
+    .sobre_nosotros .container:nth-child(2){
+        margin: 20px;
+    }
+    .sobre_nosotros .back{
+        padding: 15px;
+        font-size: 80%;
+    }
 
    .images{
     width: 100%;
@@ -884,6 +952,35 @@ span {
             -o-transform: translateX(-50%) translateZ(0) scaleY(0.4)        ;
 }
     }
+
+  
+
+    @keyframes animate {
+ 
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        30%{
+           border-radius: 50%;
+           opacity: 1;
+          
+        }
+        85%{
+            opacity: 1; 
+        }
+        100%{
+            transform: translateY(-2300px);
+            opacity: 0;
+            -webkit-transform: translateY(-2300px);
+            -moz-transform: translateY(-2300px);
+            -ms-transform: translateY(-2300px);
+            -o-transform: translateY(-2300px);
+}
+     
+     }
 }
 
 
