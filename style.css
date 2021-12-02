@@ -19,6 +19,7 @@ body {
     overflow-x: hidden;
     letter-spacing: 1.5px;
     font-size: 30px;
+    background:rgba(78,133,199,1) ;
 }
 .btn{
     font-family: 'Poppins', sans-serif;
@@ -161,6 +162,15 @@ body {
     align-items: center;
     background: linear-gradient(0deg, rgba(78,133,199,1) 29%, rgba(247,166,134,1) 48%, rgba(235,162,94,1) 59%, rgba(87,153,227,1) 86%);
 }
+/* .container_img::before{
+    content: '';
+    background: linear-gradient(to bottom, red, transparent);
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+} */
 .titulo_inicio{
     /* background: chocolate; */
     position: absolute;
@@ -406,23 +416,59 @@ span {
     overflow-x: hidden;
 }
 
+.sobre_nosotros{
+    /* background: mediumaquamarine; */
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre_nosotros .container{
+   /*  background: chocolate; */
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.sobre_nosotros img{
+    width: 50%;
+    object-fit: fill;
+}
+.sobre_nosotros .card{
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.container:hover > .front{ 
+    transform:rotateY(-180deg);
+}
+ 
+.container:hover > .back{
+   transform:rotateY(0deg);
+}
+
+
+
 .anuncio{
     /* background: chartreuse; */
-    grid-column: 2/3;
-    grid-row: 4/6;
-    position: relative;
-    width: 400px;
+    width: auto;
     height: auto;
     text-align: center;
+    grid-column:2/4 ;
+    grid-row:4/6 ; 
 }
 .detalles{
-    grid-column: 2/3;
-    grid-row: 4/6;
     display: flex;
     flex-direction: column;
-    align-items: center;
     height: 400px;
     font-size: 40px;
+    grid-column:2/4 ;
+    grid-row:4/5 ;  
 }
 .detalles .dia, .fecha{
     color: rgb(255, 187, 0); 
@@ -434,25 +480,47 @@ span {
 
 .grid{
     /* background: rgb(35, 150, 20); */
+    margin-top: 4rem;
     display: grid;
-    grid-template-columns: 1rem 1fr 1fr 1fr 1rem;
-    grid-template-rows: 2rem 4rem 5rem 3fr 2fr 2rem;
+    grid-template-columns: 1rem 1fr 1fr 1fr 1fr 1rem;
+    grid-template-rows: 2rem 1fr 5rem 3fr 2fr 2rem;
 }
 .titulo{
     font-size: 2rem;
     letter-spacing: 4px;
     text-align: center;
 }
+.titulo p{
+    letter-spacing: 1px;  
+}
 .titulo_cuentacuentos{
-    grid-column: 3/4;
+    padding: 0 3rem;
+    grid-column: 3/5;
     grid-row: 2/3;  
 }
 .reserva{
+    /* background: chocolate; */
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column:2/4;
+    grid-row:4/5 ; 
+    height: 2rem;
 }
 .reserva > p{
     padding: 20px;
+}
+
+.btn-reserva{
+    width: 200px;
+    background:#FA513A ; 
+}
+.reserva{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    padding: 0 0 4rem;
 }
 
 
@@ -461,7 +529,7 @@ span {
 /* -------------------------------------------libro---------------------------------------- */
 .container-libro{
     /* background: chocolate; */
-    grid-column: 3/5;
+    grid-column: 4/6;
     grid-row: 4/6;
     display: flex;
     flex-direction: column;
@@ -553,20 +621,11 @@ span {
 /* -------------------------------- */
 
 
-.btn-reserva{
-    width: 200px;
-    background:#FA513A ; 
-}
-.reserva{
-    grid-column: 2/3;
-    grid-row: 5/6;
-    padding: 0 0 4rem;
-}
-
 
 /* ------------------------------------------------------------Burbujas----------------------------------------- */
 
 .circles{
+    /* background: yellow; */
      position: absolute;
      z-index: -1;
      top: 0;
@@ -709,11 +768,17 @@ span {
        opacity: 1;
       
     }
- 
-    90%,100%{
-        transform: translateY(-1500px);
-        opacity: 0;
+    85%{
+        opacity: 1; 
     }
+    100%{
+        transform: translateY(-1900px);
+        opacity: 0;
+        -webkit-transform: translateY(-1900px);
+        -moz-transform: translateY(-1900px);
+        -ms-transform: translateY(-1900px);
+        -o-transform: translateY(-1900px);
+}
  
  }
 
@@ -722,24 +787,18 @@ span {
 
 .fondo{
     overflow-x: hidden;
-    background: rgba(0,58,167,1); 
-    /* background:#6DD9FB ; */
 }
 .container-fondo{
     position: relative;
     height: 350px;
 }
 .img-fondo{
-    position: absolute;
-    bottom: 0;
-    left: 0; 
     width: 100%;
     filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
     -webkit-filter: drop-shadow( 5px -5px 2px rgba(0, 0, 0, 0.3));
 }
 .container-proximamente{
-    /* background: rgb(35, 150, 20); */
-    background: rgb(0, 78, 188);
+    /* background: rgb(0, 78, 188); */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -773,11 +832,9 @@ span {
     justify-content: space-around;
     width: 300px;
     height: 400px;
-    margin-left: 40px;
+    padding:0 20px;
 }
-.carrusel:last-child{
-    margin-right: 40px;
-}
+
 .proximamente img{
     width: 220px;
     height: 250px;
@@ -795,18 +852,41 @@ span {
 /* =========================================== MediaQuery ================================ */
 @media only screen and  (max-width:768px){
 
+   .sobre_nosotros .container{
+        width: 200px;
+        height: 200px;
+    }
+    .sobre_nosotros{
+        flex-direction: column;
+    }
+    .sobre_nosotros .container:nth-child(2){
+        margin: 20px;
+    }
+    .sobre_nosotros .back{
+        padding: 15px;
+        font-size: 80%;
+    }
+
+   .images{
+    width: 100%;
+    height: 60%;
+    top: 40vh;
+   }
   .grid{
     /* background: hotpink; */
     grid-template-columns: 1rem 1fr 1rem;
-    grid-template-rows: 4rem 4rem 1rem 1fr 1fr; 
+    grid-template-rows:1rem 11rem 1rem 22rem 1fr 1rem 8rem 2rem; 
   }  
   .titulo_cuentacuentos{
     grid-column: 2/3; 
     grid-row: 2/3;
    }
+   .anuncio{
+       width: 100vw;
+   }
    .detalles{
     grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
    }
    .container-libro{
     grid-column: 2/3;
@@ -821,9 +901,9 @@ span {
     width: 80%;
     margin: auto;
    } 
-   .anuncio{
+   .reserva{
     grid-column: 2/3;
-    grid-row: 4/5;
+    grid-row: 7/8;
    }
    .titulo_inicio{
    /*  background: chocolate; */
@@ -831,7 +911,6 @@ span {
     top: 16%;
     padding: 22px;
     margin: 0 auto;
-    
     }
     .carrusel{
      /* background: red; */
@@ -850,6 +929,58 @@ span {
     .container-fondo{
         height: 100px;
     }
+    @keyframes move_wave {
+        0% {
+            transform: translateX(0) translateZ(0) scaleY(0.4)        ;
+            -webkit-transform: translateX(0) translateZ(0) scaleY(0.4)        ;
+            -moz-transform: translateX(0) translateZ(0) scaleY(0.4)        ;
+            -ms-transform: translateX(0) translateZ(0) scaleY(0.4)        ;
+            -o-transform: translateX(0) translateZ(0) scaleY(0.4)        ;
+}
+        50% {
+            transform: translateX(-25%) translateZ(0) scaleY(0.1)        ;
+            -webkit-transform: translateX(-25%) translateZ(0) scaleY(0.1)        ;
+            -moz-transform: translateX(-25%) translateZ(0) scaleY(0.1)        ;
+            -ms-transform: translateX(-25%) translateZ(0) scaleY(0.1)        ;
+            -o-transform: translateX(-25%) translateZ(0) scaleY(0.1)        ;
+}
+        100% {
+            transform: translateX(-50%) translateZ(0) scaleY(0.4)        ;
+            -webkit-transform: translateX(-50%) translateZ(0) scaleY(0.4)        ;
+            -moz-transform: translateX(-50%) translateZ(0) scaleY(0.4)        ;
+            -ms-transform: translateX(-50%) translateZ(0) scaleY(0.4)        ;
+            -o-transform: translateX(-50%) translateZ(0) scaleY(0.4)        ;
+}
+    }
+
+  
+
+    @keyframes animate {
+ 
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        30%{
+           border-radius: 50%;
+           opacity: 1;
+          
+        }
+        85%{
+            opacity: 1; 
+        }
+        100%{
+            transform: translateY(-2300px);
+            opacity: 0;
+            -webkit-transform: translateY(-2300px);
+            -moz-transform: translateY(-2300px);
+            -ms-transform: translateY(-2300px);
+            -o-transform: translateY(-2300px);
+}
+     
+     }
 }
 
 
@@ -879,6 +1010,10 @@ span {
     }
     #menu{
         justify-content: space-around;
+    }
+    .titulo_inicio{
+        top: 6%;
+        padding: 0 15px;  
     }
   
 } 

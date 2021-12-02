@@ -20,3 +20,5 @@ const background = document.querySelector('.background')
 btn.addEventListener('click',() =>{
 background.classList.toggle('active');
 })
+
+/*  */
