@@ -10,7 +10,10 @@ glowInTexts.forEach(glowInText => {
     span.style.animationDelay = `${i * 0.05}s`;
     glowInText.append(span);
   });
+  setTimeout(function(){ glowInTexts; }, 5000)
 });
+
+
 
 /* =================MENU=============== */
 const btn = document.querySelector('.container_menu')
